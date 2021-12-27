@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        caption="msg://blankScreen.caption">
+    <layout>
+        <hbox spacing="true" align="MIDDLE_CENTER">
+            <vbox spacing="true"
+                  css="border: 1px solid; padding: 30px;"
+                  caption="&#1057;&#1086;&#1088;&#1090;&#1080;&#1088;&#1086;&#1074;&#1082;&#1072; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1086;&#1074;">
+                <hbox spacing="true">
+                    <valuesPicker caption="Array 1" id="arratFirst">
+                        <actions>
+                            <action id="values_select" type="values_select">
+                                <properties>
+                                    <property name="javaClass" value="java.lang.String"/>
+                                </properties>
+                            </action>
+                            <action id="value_clear" type="value_clear"/>
+                        </actions>
+                    </valuesPicker>
+                    <valuesPicker caption="Array 2" id="arraySecond">
+                        <actions>
+                            <action id="values_select" type="values_select">
+                                <properties>
+                                    <property name="javaClass" value="java.lang.String"/>
+                                </properties>
+                            </action>
+                            <action id="value_clear" type="value_clear"/>
+                        </actions>
+                    </valuesPicker>
+                </hbox>
+                <hbox spacing="true" align="TOP_CENTER">
+                    <textField caption="Result" editable="false" id="resultText"/>
+                </hbox>
+                <hbox spacing="true" width="350px">
+                    <buttonsPanel width="350">
+                        <button caption="&#1055;&#1086;&#1089;&#1095;&#1080;&#1090;&#1072;&#1090;&#1100;"
+                                id="computeArr"/>
+                        <button caption="&#1057;&#1086;&#1093;&#1088;&#1072;&#1085;&#1080;&#1090;&#1100; array 1"
+                                align="TOP_RIGHT" id="saveArr"/>
+                    </buttonsPanel>
+                </hbox>
+            </vbox>
+            <vbox spacing="true" width="200"/>
+            <vbox spacing="true"
+                  caption="&#1052;&#1072;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1081; &#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1076;"
+                  css="border: 1px solid; padding: 28px;">
+                <hbox spacing="true">
+                    <vbox spacing="true" width="auto" id="rer">
+                        <hbox spacing="true">
+                            <textField width="50" id="cube1" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                            <textField width="50" id="cube2" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                            <textField width="50" id="cube3" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                        </hbox>
+                        <hbox spacing="true">
+                            <textField width="50" id="cube4" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                            <textField width="50" id="cube5" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                            <textField width="50" id="cube6" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                        </hbox>
+                        <hbox spacing="true">
+                            <textField width="50" id="cube7" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                            <textField width="50" id="cube8" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                            <textField width="50" id="cube9" datatype="int">
+                                <formatter>
+                                    <number/>
+                                </formatter>
+                            </textField>
+                        </hbox>
+                    </vbox>
+                    <textField align="MIDDLE_CENTER" width="100" editable="false" id="costField"/>
+                    <vbox spacing="true" width="auto" id="res">
+                        <hbox spacing="true">
+                            <textField width="50" id="res1" editable="false">
+                            </textField>
+                            <textField width="50" id="res2" editable="false">
+                            </textField>
+                            <textField width="50" id="res3" editable="false">
+                            </textField>
+                        </hbox>
+                        <hbox spacing="true">
+                            <textField width="50" id="res4" editable="false">
+                            </textField>
+                            <textField width="50" id="res5" editable="false">
+                            </textField>
+                            <textField width="50" id="res6" editable="false">
+                            </textField>
+                        </hbox>
+                        <hbox spacing="true">
+                            <textField width="50" id="res7" editable="false">
+                            </textField>
+                            <textField width="50" id="res8" editable="false">
+                            </textField>
+                            <textField width="50" id="res9" editable="false">
+                            </textField>
+                        </hbox>
+                    </vbox>
+                </hbox>
+                <hbox spacing="true">
+                    <buttonsPanel>
+                        <button caption="&#1055;&#1086;&#1089;&#1095;&#1080;&#1090;&#1072;&#1090;&#1100;"
+                                id="computeSq"/>
+                        <button caption="&#1057;&#1086;&#1093;&#1088;&#1072;&#1085;&#1080;&#1090;&#1100;"
+                                id="saveSquare"/>
+                    </buttonsPanel>
+                </hbox>
+            </vbox>
+        </hbox>
+    </layout>
+</window>
